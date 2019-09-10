@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01B4CE02232776D200A5B067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CE01232776D200A5B067 /* AppDelegate.swift */; };
 		01B4CE04232776D200A5B067 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CE03232776D200A5B067 /* RootViewController.swift */; };
-		01B4CE06232776D200A5B067 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CE05232776D200A5B067 /* DataViewController.swift */; };
 		01B4CE08232776D200A5B067 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CE07232776D200A5B067 /* ModelController.swift */; };
 		01B4CE0B232776D200A5B067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B4CE09232776D200A5B067 /* Main.storyboard */; };
 		01B4CE0D232776D600A5B067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B4CE0C232776D600A5B067 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		01B4CDFE232776D200A5B067 /* FlightOffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightOffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4CE01232776D200A5B067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B4CE03232776D200A5B067 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		01B4CE05232776D200A5B067 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		01B4CE07232776D200A5B067 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		01B4CE0A232776D200A5B067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01B4CE0C232776D600A5B067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				01B4CE01232776D200A5B067 /* AppDelegate.swift */,
 				01B4CE03232776D200A5B067 /* RootViewController.swift */,
-				01B4CE05232776D200A5B067 /* DataViewController.swift */,
 				01B4CE07232776D200A5B067 /* ModelController.swift */,
 				01B4CE09232776D200A5B067 /* Main.storyboard */,
 				01B4CE0C232776D600A5B067 /* Assets.xcassets */,
@@ -143,7 +140,6 @@
 			files = (
 				01B4CE04232776D200A5B067 /* RootViewController.swift in Sources */,
 				01B4CE08232776D200A5B067 /* ModelController.swift in Sources */,
-				01B4CE06232776D200A5B067 /* DataViewController.swift in Sources */,
 				01B4CE02232776D200A5B067 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlightOffers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = si.erazred.FlightOffers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlightOffers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = si.erazred.FlightOffers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
