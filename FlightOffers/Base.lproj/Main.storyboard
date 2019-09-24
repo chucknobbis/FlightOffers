@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3CP-nZ-LA7">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3CP-nZ-LA7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,14 +13,14 @@
             <objects>
                 <viewController title="MainViewController" id="3CP-nZ-LA7" customClass="MainViewController" customModule="FlightOffers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4nb-3T-cBg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-TE-GBJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-8R-TLo">
-                                <rect key="frame" x="176" y="622" width="23" height="37"/>
+                                <rect key="frame" x="176" y="817" width="62" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="v2J-qb-KvD"/>
                                 </constraints>
@@ -30,12 +29,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3hP-8R-TLo" firstAttribute="leading" secondItem="PL9-jk-rOE" secondAttribute="leading" constant="176" id="00K-DI-xlo"/>
-                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="bottom" secondItem="PL9-jk-rOE" secondAttribute="bottom" id="B5E-vd-7nS"/>
+                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="leading" secondItem="PL9-jk-rOE" secondAttribute="leading" id="7GE-j9-one"/>
+                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="top" secondItem="4nb-3T-cBg" secondAttribute="top" id="Crl-qp-elC"/>
+                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="trailing" secondItem="PL9-jk-rOE" secondAttribute="trailing" id="EpJ-he-mRk"/>
                             <constraint firstItem="PL9-jk-rOE" firstAttribute="trailing" secondItem="3hP-8R-TLo" secondAttribute="trailing" constant="176" id="IGj-8o-r52"/>
-                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="trailing" secondItem="PL9-jk-rOE" secondAttribute="trailing" id="XAF-pP-0zU"/>
                             <constraint firstItem="PL9-jk-rOE" firstAttribute="bottom" secondItem="3hP-8R-TLo" secondAttribute="bottom" constant="8" id="ZPe-Lp-bEz"/>
-                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="top" secondItem="4nb-3T-cBg" secondAttribute="top" id="aTb-9k-nEC"/>
-                            <constraint firstItem="YFc-TE-GBJ" firstAttribute="leading" secondItem="PL9-jk-rOE" secondAttribute="leading" id="fun-7T-TFu"/>
+                            <constraint firstAttribute="bottom" secondItem="YFc-TE-GBJ" secondAttribute="bottom" id="eHS-7i-qSQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PL9-jk-rOE"/>
                     </view>

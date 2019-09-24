@@ -35,7 +35,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             "limit": 5,
             "asc": 0,
             "locale": "en",
-            "flyFrom": "FRA",
+            "flyFrom": "TRS",
             "to": "anywhere",
             "adults": 1,
             "infants": 0,
@@ -45,10 +45,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             "oneforcity": 1,
             "wait_for_refresh": 0,
             "typeFlight": "oneway",
-//            "dateFrom": setDates().dateFrom,
-//            "dateTo": setDates().dateTo
-            "dateFrom": "13/09/2019",
-            "dateTo": "14/09/2019"
+            "dateFrom": setDates().dateFrom,
+            "dateTo": setDates().dateTo
+//            "dateFrom": "13/09/2019",
+//            "dateTo": "14/09/2019"
         ]
         Alamofire.request(ApiURL, method: .get, parameters: params).responseJSON(completionHandler: { response in
             
@@ -94,48 +94,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         
     }
-    
-//    func requestToServer(params: Parameters, completion: @escaping (Bool, String) -> Void) {
-//
-//        Alamofire.request(LOGIN_REQUEST_URL, method: .post, parameters: params).responseJSON { response in
-//
-//            if response.result.isSuccess {
-//
-//                let json = response.result.value!
-//
-//                self.responseHead = self.processResponse(response: JSON(json))
-//
-//                completion(true, self.responseHead)
-//
-//            }
-//            else {
-//                completion(false, self.responseHead)
-//            }
-//        }
-//
-//
-//
-//    }
-//
-//    func processResponse(response: JSON) -> String {
-//
-//        let responseHead : String = response["responseHead"].string!
-//
-//        switch responseHead {
-//        case "suc":
-//            let userID = response["user_id"].string!
-//            let userRazred = response["user_razred"].string!
-//            let userDostop = response["user_dostop"].string!
-//
-//            updateUserPlist(user_id: Int(userID)!, user_razred: Int(userRazred)!, user_dostop: Int(userDostop)!)
-//
-//        default:
-//            print("Response head parsed over: \(responseHead)")
-//        }
-//
-//        return responseHead
-//
-//    }
 
     func createSlide(from: String,to: String,price: Int,departure: String,cityId: String) -> (Slide) {
         let slide : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
